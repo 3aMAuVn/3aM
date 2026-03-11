@@ -1,1 +1,16 @@
+.button {
+  display: inline-block;
+  padding: 0.9rem 1.4rem;
+  border-radius: 999px;
+  font-weight: bold;
+}
 
+.button-primary {
+  background: #5c3cc4;
+  color: white;
+}
+
+.button-secondary {
+  background: #f2b233;
+  color: #222;
+}
