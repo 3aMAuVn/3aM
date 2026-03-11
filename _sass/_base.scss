@@ -1,1 +1,21 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fcfbff;
+  color: #222;
+  line-height: 1.6;
+}
 
+h1 {
+  color: #3e278f;
+  font-size: 3rem;
+}
+
+a {
+  color: #5b3cc4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
