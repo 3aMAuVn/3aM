@@ -1,1 +1,13 @@
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
 
+.hero {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f4efff, #ffffff);
+}
+
+.hero img {
+  max-width: 420px;
+}
