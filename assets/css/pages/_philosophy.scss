@@ -1,0 +1,61 @@
+.philosophy-list {
+  line-height: 1.85;
+}
+
+.teach-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.philosophy-note {
+  padding: 14px 16px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  font-weight: 750;
+  line-height: 1.7;
+}
+
+.philosophy-quicklinks-section {
+  padding-top: 0;
+}
+
+.ql-btn.is-active {
+  background: rgba(11, 94, 215, 0.18);
+  border-color: rgba(11, 94, 215, 0.35);
+  box-shadow: 0 10px 18px rgba(11, 94, 215, 0.12);
+  color: var(--brand-dark);
+}
+
+@keyframes mmmFlash {
+  0% {
+    box-shadow: 0 0 0 rgba(11, 94, 215, 0);
+    border-color: rgba(11, 94, 215, 0.12);
+  }
+  35% {
+    box-shadow: 0 0 0 6px rgba(11, 94, 215, 0.18);
+    border-color: rgba(11, 94, 215, 0.55);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(11, 94, 215, 0);
+    border-color: rgba(11, 94, 215, 0.12);
+  }
+}
+
+.anchor-flash.card {
+  animation: mmmFlash 1.15s ease;
+}
+
+@media (max-width: 1050px) {
+  .teach-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .teach-grid {
+    grid-template-columns: 1fr;
+  }
+}

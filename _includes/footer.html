@@ -1,0 +1,29 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+
+      <div class="footer-left">
+        © <span id="year"></span> Magic Math Master • Australia
+      </div>
+
+      <nav class="footer-center" aria-label="Footer navigation">
+        {% assign current_url = page.url | replace: 'index.html', '' %}
+        {% for item in site.data.navigation.footer %}
+          {% assign item_url = item.url | replace: 'index.html', '' %}
+          <a
+            data-nav
+            href="{{ item.url | relative_url }}"
+            {% if current_url == item_url %}aria-current="page"{% endif %}
+          >
+            {{ item.name }}
+          </a>
+        {% endfor %}
+      </nav>
+
+      <div class="footer-right" aria-label="Contact email">
+        <a href="mailto:info@magicmathmaster.com.au">info@magicmathmaster.com.au</a>
+      </div>
+
+    </div>
+  </div>
+</footer>

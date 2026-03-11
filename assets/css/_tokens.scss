@@ -1,0 +1,45 @@
+:root {
+  --bg: #f7f9fc;
+  --paper: #ffffff;
+  --paper-soft: rgba(255, 255, 255, 0.75);
+  --paper-soft-2: rgba(255, 255, 255, 0.82);
+  --paper-strong: rgba(255, 255, 255, 0.92);
+
+  --ink: #0f172a;
+  --muted: #475569;
+  --line: rgba(15, 23, 42, 0.1);
+
+  --brand: #0b5ed7;
+  --brand-dark: #0a3d91;
+  --brand-soft: rgba(11, 94, 215, 0.08);
+  --brand-soft-2: rgba(11, 94, 215, 0.12);
+  --brand-border: rgba(11, 94, 215, 0.18);
+  --brand-border-strong: rgba(11, 94, 215, 0.35);
+
+  --accent: #f59e0b;
+  --accent-dark: #d97706;
+  --success: #16a34a;
+  --success-dark: #15803d;
+  --danger: #ba0921;
+  --turquoise: #05464d;
+  --purple: #7c3aed;
+
+  --radius-sm: 12px;
+  --radius: 16px;
+  --radius-lg: 18px;
+  --radius-xl: 22px;
+  --radius-2xl: 26px;
+  --radius-round: 999px;
+
+  --shadow-soft: 0 10px 24px rgba(2, 6, 23, 0.08);
+  --shadow-card: 0 10px 26px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 18px 40px rgba(2, 6, 23, 0.1);
+  --shadow-hover: 0 12px 24px rgba(2, 6, 23, 0.14);
+
+  --max: 1120px;
+
+  --hero-title-min: 30px;
+  --hero-title-fluid: 3.2vw;
+  --hero-title-max: 56px;
+  --hero-title-line: 1.08;
+}

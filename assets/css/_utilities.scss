@@ -1,0 +1,90 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.desktop-only {
+  display: inline-flex;
+}
+
+.tablet-only,
+.phone-only,
+.app-only,
+.mobile-only {
+  display: none !important;
+}
+
+body.is-ipad .desktop-only,
+body.is-ipad .app-only {
+  display: inline-flex !important;
+}
+
+.best-value {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 5px 10px;
+  border-radius: var(--radius-round);
+  background: rgba(229, 57, 53, 0.95);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 1000;
+  vertical-align: middle;
+}
+
+.emoji {
+  margin-right: 6px;
+  color: initial !important;
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: initial !important;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+
+@media (max-width: 980px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .tablet-only {
+    display: inline-flex !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .tablet-only {
+    display: none !important;
+  }
+
+  .phone-only {
+    display: inline-flex !important;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-only,
+  .app-only {
+    display: inline-flex !important;
+  }
+}
+
+@media (pointer: coarse) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .app-only {
+    display: inline-flex !important;
+  }
+}
